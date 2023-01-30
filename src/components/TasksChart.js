@@ -2,6 +2,8 @@ import React, {useCallback, useEffect } from 'react';
 import {useDirectus} from "../hooks/directus";
 import PropTypes from "prop-types";
 import {LineChart, Line, CartesianGrid, XAxis, YAxis, BarChart, Bar, Tooltip} from 'recharts';
+
+
 const data = [{name: 'Item 1', Artisan: 4}, {name: 'Item 2', Artisan: 10}, {name: 'Item 3', Artisan: 12}, {name: 'Item 4', Artisan: 8}];
 
 const TasksChart = props => {
@@ -12,11 +14,9 @@ const TasksChart = props => {
 
     const directus = useDirectus();
 
-    let services = null;
-
     const getData = useCallback(() => {
         directus.items('projects').readOne(projectid).then(data => {
-            services = data.services;
+            let services = data.services;
             services.map(i => {
                 directus.items("services").readOne(i).then(data => {
                     //console.log(data);
