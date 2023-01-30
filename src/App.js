@@ -1,36 +1,26 @@
-import './App.css';
 import {AuthProvider} from "./hooks/auth";
 import {DirectusProvider} from "./hooks/directus";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Register from "./components/authentification/Register";
+import Login from "./components/authentification/Login";
 
 function App() {
 
   return (
+    <BrowserRouter>
       <DirectusProvider>
-          <AuthProvider>
-              <div>
-                  <h1>Data from Directus</h1>
-              </div>
-          </AuthProvider>
+        <AuthProvider>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path='login' element={<Login />} />
+            <Route path='register' element={<Register />} />
+            {/* <Route path='logout' element={<logout />} /> */}
+          </Routes>
+        </AuthProvider>
       </DirectusProvider>
+    </BrowserRouter>
   );
-  /*return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );*/
 }
 
 export default App;
