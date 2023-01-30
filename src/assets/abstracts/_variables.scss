@@ -1,0 +1,46 @@
+$blue : #152B57;
+
+$pink : #F6ADD5;
+$pink-80 : rgba(246, 173, 213, 0.2);
+
+$beige : #F5CDB5;
+
+//green
+$dark-green : #00272D;
+$medium-green : #217165;
+$light-green : #1F9987;
+$green-hover: #12796A;
+$dark-green-hover: #00161a;
+
+$white : #F2F2F2;
+$black : #000000;
+$gray : #8795A1;
+
+$form : #F0E8E4;
+
+// font
+
+$Bold : 'Satochi Bold';
+$Medium : 'Satochi Medium';
+$Regular : 'Satochi Regular';
+$Light : 'Satochi Light';
+
+@font-face {
+    font-family: 'Satochi Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Satochi Light';
+    src: url('../fonts/Satoshi-Light.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Satochi Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Satochi Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format("woff2");
+}

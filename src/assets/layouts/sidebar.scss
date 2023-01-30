@@ -1,0 +1,58 @@
+.sidebar {
+  background-color: $dark-green;
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sidebar_nav {
+    position: relative;
+    justify-content: center;
+    padding: 0;
+    ul {
+      display: flex;
+      flex-direction: column;
+      background-color: $dark-green;
+      width: initial;
+      gap: initial;
+      li {
+        text-align: center;
+        img {
+          width: 10rem;
+        }
+        .sidebar_link {
+          color: white;
+          font-family: $Regular;
+          font-size: 1.5rem;
+          display: inline-block;
+          &::before {
+            content: url("../images/projet.svg");
+            width: 100%;
+            background-color: transparent;
+            height: initial;
+            width: initial;
+            position: relative;
+            left: -15px;
+            // background-image: url("../");
+          }
+          &::after {
+            display: none;
+          }
+        }
+        &:nth-child(1) {
+          margin: 0;
+        }
+        
+
+        &:nth-child(3) .sidebar_link::before{
+          content: url("../images/login.svg");
+        }
+
+        &:nth-child(4) .sidebar_link::before{
+          content: url("../images/team.svg");
+        }
+      }
+    }
+  }
+}

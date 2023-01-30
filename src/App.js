@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Authentification from "./pages/Authentification";
 import Dashboard from "./pages/Dashboard";
 import Logout from "./components/authentification/Logout";
+import "./assets/stylesheets/style.css";
 
 function App() {
   return (

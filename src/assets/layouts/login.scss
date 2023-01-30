@@ -1,0 +1,71 @@
+.login_body{
+
+    display: flex;
+    .login_logo{
+        width: 50vw;
+        height: 100vh;
+        background-color: #B2E2D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .login_logo_img{
+            width: 25vw;
+        }
+    }
+
+    .login_connexion{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        .login_subtitle{
+            font-family: $Bold;
+            font-size: 2.5em;
+            margin: 0.5em;
+        }
+
+        .login_title{
+            font-family: $Regular;
+            font-size: 1em;
+            margin: 0.5em;
+            margin-bottom: 5em;
+        }
+
+        .login_label{
+            font-family: $Regular;
+            margin: 0.5em;
+            width: 80%;
+            text-align: left;
+        }
+
+        .login_input{
+            border: 0px;
+            background-color: $white;
+            border-bottom: solid black 2px;
+            width: 80%;
+            margin: 0.5rem;
+        }
+
+        .login_mdp{
+            text-decoration: none;
+            color: black;
+            width: 80%;
+            text-align: right;
+            margin: 0.5rem;
+            font-family: $Regular;
+        }
+
+        .login_button{
+            border-radius: 15px;
+            background-color: $light-green;
+            color: $white;
+            font-family: $Light;
+            padding: 0.5em 1em 0.5em 1em;
+            border: 0px;
+            @include btn($light-green);
+        }
+    }
+}
