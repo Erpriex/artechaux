@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Authentification from "./pages/Authentification";
 import Dashboard from "./pages/Dashboard";
+import Logout from "./components/authentification/Logout";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path='login' element={<Authentification login={true} />} />
             <Route path='register' element={<Authentification login={false} />} />
-            {/* <Route path='logout' element={<logout />} /> */}
+            <Route path='logout' element={<Logout />} />
             <Route path='dashboard' element={<Dashboard />} />
           </Routes>
         </AuthProvider>
