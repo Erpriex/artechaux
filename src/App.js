@@ -1,8 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import {AuthProvider} from "./hooks/auth";
+import {DirectusProvider} from "./hooks/directus";
 
 function App() {
+
   return (
+      <DirectusProvider>
+          <AuthProvider>
+              <div>
+                  <h1>Data from Directus</h1>
+              </div>
+          </AuthProvider>
+      </DirectusProvider>
+  );
+  /*return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +30,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  );*/
 }
 
 export default App;
