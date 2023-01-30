@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {LineChart, Line, CartesianGrid, XAxis, YAxis, BarChart, Bar, Tooltip} from 'recharts';
 const data = [{name: 'Item 1', Artisan: 4}, {name: 'Item 2', Artisan: 10}, {name: 'Item 3', Artisan: 12}, {name: 'Item 4', Artisan: 8}];
 
-const LoadProfileChart = props => {
+const TasksChart = props => {
 
     const {
         projectid
@@ -39,8 +39,8 @@ const LoadProfileChart = props => {
     );
 };
 
-LoadProfileChart.propTypes = {
+TasksChart.propTypes = {
     projectid: PropTypes.number.isRequired
 }
 
-export default LoadProfileChart;
+export default TasksChart;
