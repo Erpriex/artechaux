@@ -28,6 +28,13 @@ export const AuthProvider = (props) => {
                     user: result.access_token
                 })
             })
+            .catch((error) => {
+                setAuthState({
+                    ...authState,
+                    error,
+                    user: null
+                })
+            })
     }
     const actions = {
         login
