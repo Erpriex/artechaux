@@ -1,7 +1,6 @@
 import './App.css';
 import {AuthProvider} from "./hooks/auth";
 import {DirectusProvider} from "./hooks/directus";
-import LoadProfileChart from "./components/LoadProfileChart";
 
 function App() {
 
@@ -10,7 +9,6 @@ function App() {
           <AuthProvider>
               <div>
                   <h1>Data from Directus</h1>
-                  <LoadProfileChart projectid={1} />
               </div>
           </AuthProvider>
       </DirectusProvider>
