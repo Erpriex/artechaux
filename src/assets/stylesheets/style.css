@@ -508,7 +508,7 @@ img {
   z-index: 99;
 }
 .cookies-banner::before {
-  content: url("../images/cookies.svg");
+  /* content: url("../images/cookies.svg"); */
   position: absolute;
   top: 0;
   left: 50%;

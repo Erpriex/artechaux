@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 const Home = () => {
   return (
@@ -125,14 +126,14 @@ const Home = () => {
           </div>
         </section>
 
-        <section id='dashboard' class='dashboard-container'>
-          <div class='dashboard-container_center'>
-            <h2 class='dashboard-container_center_title'>Personnalisez votre Dashboard</h2>
-            <p class='dashboard-container_center_text'>
+        <section id='dashboard' class='dashboard-home-container'>
+          <div class='dashboard-home-container_center'>
+            <h2 class='dashboard-home-container_center_title'>Personnalisez votre Dashboard</h2>
+            <p class='dashboard-home-container_center_text'>
               Suivez les données de vos projets en temps réel.
             </p>
-            <div class='dashboard-container_center_image'>
-              <img src='./assets/images/Dashboard.png' alt='' />
+            <div class='dashboard-home-container_center_image'>
+              <img src='../assets/images/Dashboard.png' alt='' />
             </div>
           </div>
         </section>
@@ -140,7 +141,7 @@ const Home = () => {
         <footer class='footer-container'>
           <nav>
             <a href='#'>
-              <img class='logo' src='./assets/images/logo.png' />
+              <img class='logo' src={logo} />
             </a>
             <ul>
               <li>
