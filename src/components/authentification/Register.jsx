@@ -1,16 +1,15 @@
 import React from "react";
-import Input from "./Input";
 
 const Register = (props) => {
   return (
-    <div>
-      <Input type='text' name='lastName' label='Nom' />
-      <Input type='text' name='firstName' label='Prenom' />
-      <Input type='email' name='mail' label='Email' />
-      <Input type='password' name='password' label='Mot de passe' />
-      <Input type='password' name='confirmPassword' label='Confirmation du mot de passe' />
-      <Input type='submit' name='register' label='Inscription' />
-    </div>
+    <form>
+      <input type='text' name='lastName' label='Nom' />
+      <input type='text' name='firstName' label='Prenom' />
+      <input type='email' name='mail' label='Email' />
+      <input type='password' name='password' label='Mot de passe' />
+      <input type='password' name='confirmPassword' label='Confirmation du mot de passe' />
+      <input type='submit' name='register' label='Inscription' />
+    </form>
   );
 };
 
