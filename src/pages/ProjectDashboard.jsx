@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {useDirectus} from "../hooks/directus";
 import ProjectView from "../components/ProjectView";
+import TasksList from "../components/TasksList";
 
 const ProjectDashboard = props => {
 
@@ -39,7 +40,22 @@ const ProjectDashboard = props => {
                     project = {project}
                 />
             : ''}
-
+            <button onClick={()=>setOnglet('tasklist')}>Liste des tâches</button>
+            {onglet === 'tasklist' ?
+                <TasksList
+                    projectID = {projectID}
+                />
+                : ''}
+            {onglet === 'tasklistview' ?
+                <TasksList
+                    project = {project}
+                />
+                : ''}
+            {onglet === 'tasklistedit' ?
+                <TasksList
+                    project = {project}
+                />
+                : ''}
         </div>
     );
 };
