@@ -2,12 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
+import icon1 from "../assets/images/icon_1.png";
+import icon2 from "../assets/images/icon_2.png";
+import icon3 from "../assets/images/icon_3.png";
+import icon4 from "../assets/images/icon_4.png";
+
+import listProject from "../assets/images/list_project.png";
+import dashboard from "../assets/images/Dashboard.png";
+
+
 const Home = () => {
   return (
     <>
       <nav>
         <a href='#'>
-          <img class='logo' src='./assets/images/logo.png' />
+          <img class='logo' src={logo} />
         </a>
         <ul>
           <li>
@@ -65,7 +74,7 @@ const Home = () => {
             <div class='solutions-container_center_flex'>
               <div class='card-solution'>
                 <div class='card-solution_image'>
-                  <img src='./assets/images/icon _edit_ (3).png' alt='' class='' />
+                  <img src={icon3} alt='' class='' />
                 </div>
                 <h3 class='card-solution_title'>Performance</h3>
                 <p class='card-solution_text'>
@@ -74,21 +83,21 @@ const Home = () => {
               </div>
               <div class='card-solution'>
                 <div class='card-solution_image'>
-                  <img src='./assets/images/icon _edit_ (4).png' alt='' class='' />
+                  <img src={icon4} alt='' class='' />
                 </div>
                 <h3 class='card-solution_title'>Facilité </h3>
                 <p class='card-solution_text'>Utilisez nos outils avec facilité.</p>
               </div>
               <div class='card-solution'>
                 <div class='card-solution_image'>
-                  <img src='./assets/images/icon _edit_ (1).png' alt='' class='' />
+                  <img src={icon2} alt='' class='' />
                 </div>
                 <h3 class='card-solution_title'>Collaboration</h3>
                 <p class='card-solution_text'>Collaborez avec votre équipe à travers vos tâches.</p>
               </div>
               <div class='card-solution'>
                 <div class='card-solution_image'>
-                  <img src='./assets/images/icon _edit_ (2).png' alt='' class='' />
+                  <img src={icon1} alt='' class='' />
                 </div>
                 <h3 class='card-solution_title'>Gestion</h3>
                 <p class='card-solution_text'>Gérez vos projets en les divisant en tâches.</p>
@@ -106,7 +115,7 @@ const Home = () => {
           </div>
           <div class='artechaux-container_right'>
             <div class='artechaux-container_right_image'>
-              <img src='./assets/images/list_projects.png' alt='' />
+              <img src={listProject} alt='' />
             </div>
           </div>
         </section>
@@ -133,7 +142,7 @@ const Home = () => {
               Suivez les données de vos projets en temps réel.
             </p>
             <div class='dashboard-home-container_center_image'>
-              <img src='../assets/images/Dashboard.png' alt='' />
+              <img src={dashboard} alt='' />
             </div>
           </div>
         </section>
