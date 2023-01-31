@@ -1,6 +1,5 @@
 import React, {createContext, useState, useEffect, useContext} from 'react';
 import { Directus } from '@directus/sdk';
-import identifiers from '../identifiers';
 
 const directus = new Directus(window.location.origin);
 

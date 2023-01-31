@@ -1,0 +1,254 @@
+body {
+  background-color: $white;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+img {
+  max-width: 100%;
+}
+*{
+  scroll-behavior: smooth
+}
+.btn {
+  @include btn($light-green);
+}
+
+
+//Accordion
+.accordion-container{
+  width: 80%;
+  @include accordion();
+}
+
+
+
+.solutions-container {
+  // margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 150px;
+  padding: 10rem 10%;
+  margin-inline: auto;
+  position: relative;
+  &_center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    &_text {
+      @include text($black);
+      width: 100%;
+      text-align: center;
+    }
+    &_title {
+      order: -1;
+      @include title($black);
+      text-align: center;
+      width: 100%;
+    }
+    &_flex{
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      width: 100%;
+      .card-solution{
+        @include card-solution();
+
+      }
+    }
+  }
+}
+
+.artechaux-container {
+  // margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10rem 10%;
+  margin-inline: auto;
+  position: relative;
+  &_left {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    &_text {
+      @include text($black);
+      width: 80%;
+    }
+    &_title {
+      order: -1;
+      @include title($black);
+      width: 70%;
+    }
+  }
+  &_right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &_image{
+      position: relative;
+      width: 100%;
+      &::before{
+        content:url('../images/archi_tag.png');
+        width: fit-content;
+        // @include boxShadow();
+        position: absolute;
+        top: 50px;
+        left: 0;
+        border-radius: 20px;
+        transform: translate(-50%, -50%) scale(.8);
+      }
+      &::after{
+        content:url('../images/project.png');
+        width: 50%;
+        // @include boxShadow();
+        position: absolute;
+        bottom: 50px;
+        right: 20%;
+        border-radius: 20px;
+        transform: translate(50%, 50%) scale(.7);
+      }
+    }
+  }
+}
+
+.gantt-container {
+  // margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 50px;
+  padding: 10rem 10%;
+  margin-inline: auto;
+  position: relative;
+  &_left {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    &_text {
+      @include text($black);
+      width: 80%;
+    }
+    &_title {
+      order: -1;
+      @include title($black);
+      width: 80%;
+    }
+  }
+  &_right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &_image{
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+.dashboard-home-container {
+  // margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $dark-green;
+  padding: 10rem 10%;
+  margin-inline: auto;
+  position: relative;
+  &_center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    &_text {
+      @include text($white);
+      width: 100%;
+      text-align: center;
+    }
+    &_title {
+      order: -1;
+      @include title($white);
+      text-align: center;
+      width: 100%;
+    }
+    &_image{
+      margin-top: 5rem;
+    }
+  }
+}
+//End Home
+
+
+.btn-border {
+  @include btn-border();
+}
+.cookies-banner {
+  @include cookies-banner();
+}
+
+//Experience 
+
+.parcours {
+  &__titre {
+    font-family: $Regular;
+    font-size: 1.5rem;
+    width: 50vh;
+    margin: 1rem;
+    color: $black;
+  }
+  &__texte {
+    font-family: $Regular;
+    font-size: 1rem;
+    width: 50vh;
+    margin: 1rem;
+    color: $black;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+
+  img {
+    padding-left: 2%;
+  }
+}
+
+html {
+  margin: 0;
+  overflow-x: hidden;
+  
+}
+
+//services
+.surmesure {
+  &__titre {
+    @include title ($black);
+    margin-top: 20rem;
+  }
+
+  &__text {
+    @include text ($black);
+    margin: 2rem;
+  }
+}

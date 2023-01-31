@@ -1,0 +1,92 @@
+.inscription_body{
+
+    display: flex;
+    .inscription_logo{
+        width: 50vw;
+        height: 100vh;
+        background-color: #B2E2D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .inscription_logo_img{
+            width: 25vw;
+        }
+    }
+
+    .inscription_connexion{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        .inscription_subtitle{
+            font-family: $Bold;
+            font-size: 2.5em;
+            margin: 0.5em;
+        }
+
+        .inscription_title{
+            font-family: $Regular;
+            font-size: 1em;
+            margin: 0.5em;
+            margin-bottom: 5em;
+        }
+
+        .inscription_label{
+            font-family: $Regular;
+            margin: 1.5rem 0;
+            width: 80%;
+            text-align: left;
+        }
+
+        
+
+        .inscription_input_medium{
+            border: 0px;
+            background-color: $white;
+            border-bottom: solid black 2px;
+            
+        }
+
+        .inscription_short_input{
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+        }
+
+        .inscription_input{
+            border: 0px;
+            background-color: $white;
+            border-bottom: solid black 2px;
+            width: 80%;
+            margin: 0.5rem;
+        }
+
+        .inscription_mdp{
+            text-decoration: none;
+            color: black;
+            width: 80%;
+            text-align: right;
+            margin: 0.5rem;
+        }
+
+        .inscription_button{
+            border-radius: 15px;
+            background-color: $light-green;
+            color: $white;
+            font-family: $Light;
+            padding: 0.5em 1em 0.5em 1em;
+            border: 0px;
+            margin-top: 1rem;
+            @include btn($light-green);
+        }
+    }
+}

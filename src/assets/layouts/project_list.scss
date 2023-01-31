@@ -1,0 +1,127 @@
+.dashboard_body {
+  display: flex;
+}
+.main {
+  width: 80vw ;
+  padding: 5rem;
+  .main-title {
+    @include title($black);
+    font-size: 72px;
+  }
+}
+
+
+
+
+.og_container_table {
+  overflow: auto;
+  }
+
+.og_hotline_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    .og_hotline_table {
+      width: max-content; } }
+
+.og_hotline_table,
+.og_hotline_table th,
+.og_hotline_table td {
+  text-align: left; }
+
+.og_hotline_table th,
+.og_hotline_table td {
+  padding: 16px; }
+
+.og_hotline_table .fa-envelope {
+  font-size: 24px; }
+
+.og_hotline_table th {
+  @include text($black);
+  font-family: $Bold;
+  position: relative;
+  background-color: $white;
+  color: $black; }
+
+.og_hotline_table tbody tr {
+  border-bottom: 1px solid $black; }
+  .og_hotline_table tbody tr:nth-child(odd) {
+    background-color: #f3f3f3; }
+.og_hotline_table tbody td p {
+  @include text($black);
+  margin: 0; }
+
+  .og_hotline_table tbody tr td {
+  @include text($black);
+  text-align: right;
+  }
+
+.resizer {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 5px;
+  cursor: col-resize;
+  user-select: none; }
+  .resizer:hover,
+  .resizer .resizing {
+    border-right: 1px solid red; }
+
+.resizable {
+  border: 1px solid gray;
+  height: 100px;
+  width: 100px;
+  position: relative; }
+
+
+.og_content_produit_spec_chevron{
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  display: inline-block;
+  height: 0.45em;
+  right: -10px;
+  position: relative;
+  top: 5px;
+  transform: rotate(135deg);
+  vertical-align: top;
+  transition: all 0.2s ease-in-out;
+  width: 0.45em;
+}
+
+
+.crud a {
+  padding: 0 10px;
+}
+
+
+.eye{
+  display: inline-flex;
+  background: url('../images/icon_eyes.png');
+  background-size: auto;
+  position: relative;
+  width: 30px;
+  height: 22px;
+  background-repeat: no-repeat;
+}
+.pen{
+  background-image: url('../images/icon_pen.png');
+  display: inline-flex;
+  background-size: auto;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+}
+.bin{
+  background-image: url('../images/icon_trash.png');
+  display: inline-flex;
+  background-size: auto;
+  position: relative;
+  width: 22px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
