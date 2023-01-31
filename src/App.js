@@ -1,36 +1,28 @@
-import './App.css';
-import {AuthProvider} from "./hooks/auth";
-import {DirectusProvider} from "./hooks/directus";
+import { AuthProvider } from "./hooks/auth";
+import { DirectusProvider } from "./hooks/directus";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Authentification from "./pages/Authentification";
+import Dashboard from "./pages/Dashboard";
+import Logout from "./components/authentification/Logout";
+import "./assets/stylesheets/style.css";
 
 function App() {
-
-  return (
-      <DirectusProvider>
-          <AuthProvider>
-              <div>
-                  <h1>Data from Directus</h1>
-              </div>
-          </AuthProvider>
-      </DirectusProvider>
-  );
-  /*return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );*/
+    return (
+        <BrowserRouter>
+            <DirectusProvider>
+                <AuthProvider>
+                    <Routes>
+                        <Route index element={<Home />} />
+                        <Route path='login' element={<Authentification login={true} />} />
+                        <Route path='register' element={<Authentification login={false} />} />
+                        <Route path='logout' element={<Logout />} />
+                        <Route path='dashboard' element={<Dashboard />} />
+                    </Routes>
+                </AuthProvider>
+            </DirectusProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;
