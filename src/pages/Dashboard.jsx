@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useCallback, useEffect, useState } from "react";
 import useSecure from "../hooks/useSecure";
 import { Link } from "react-router-dom";
@@ -57,12 +56,6 @@ const Dashboard = () => {
       <Link to='/logout'>Déconnexion</Link>
     </div>
   );
-=======
-import React from "react";
-
-const Dashboard = () => {
-  return <div></div>;
->>>>>>> 39e6132 (create file)
 };
 
 export default Dashboard;
