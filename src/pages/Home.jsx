@@ -10,7 +10,6 @@ import icon4 from "../assets/images/icon_4.png";
 import listProject from "../assets/images/list_project.png";
 import dashboard from "../assets/images/Dashboard.png";
 
-
 const Home = () => {
   return (
     <>
@@ -29,12 +28,12 @@ const Home = () => {
             <a href='#dashboard'>Dashboard</a>
           </li>
           <li class='contact'>
-            <a href='#' class='btn-border'>
+            <Link to='/register' class='btn-border'>
               Inscription
-            </a>
-            <a href='#' class='btn-border btn-border--filed'>
+            </Link>
+            <Link to='/login' class='btn-border btn-border--filed'>
               Connexion
-            </a>
+            </Link>
           </li>
         </ul>
         <button class='menu_toggler'>
