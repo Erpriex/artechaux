@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import TasksChart from "../components/TasksChart";
+import GanttChart from "../components/GanttChart";
 
 const ProjectDashboard = (props) => {
   const { id } = useParams();
@@ -101,7 +102,7 @@ const ProjectDashboard = (props) => {
               onClick={() => setOnglet("taskchart")}>
               Courbes des charges
             </a>
-            <a class='dashboard-container_top_link' href='#'>
+            <a class='dashboard-container_top_link' href='#' onClick={() => setOnglet("gantt")}>
               GANTT
             </a>
           </div>
@@ -110,6 +111,7 @@ const ProjectDashboard = (props) => {
           {onglet === "taskchart"
             ? project && <TasksChart projectid={id} width={1400} height={500} />
             : ""}
+          {onglet === "gantt" ? project && <GanttChart /> : ""}
         </section>
       </main>
       {/* <button onClick={handleList}>Retour à la liste</button> */}

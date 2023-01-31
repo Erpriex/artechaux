@@ -278,7 +278,7 @@ const rows = [
 export const data = [columns, ...rows];
 
 export const options = {
-    height: 400,
+    height: 850,
     gantt: {
         trackHeight: 30,
     },
