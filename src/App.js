@@ -18,6 +18,7 @@ function App() {
             <Route path='register' element={<Authentification login={false} />} />
             <Route path='logout' element={<Logout />} />
             <Route path='dashboard' element={<Dashboard />} />
+            {/* <Route path='/projectDetails/:id' element={<DetailsPage />} /> */}
           </Routes>
         </AuthProvider>
       </DirectusProvider>
