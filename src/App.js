@@ -6,6 +6,7 @@ import Authentification from "./pages/Authentification";
 import Dashboard from "./pages/Dashboard";
 import Logout from "./components/authentification/Logout";
 import "./assets/stylesheets/style.css";
+import ProjectDashboard from "./pages/ProjectDashboard";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path='register' element={<Authentification login={false} />} />
             <Route path='logout' element={<Logout />} />
             <Route path='dashboard' element={<Dashboard />} />
-            {/* <Route path='/projectDetails/:id' element={<DetailsPage />} /> */}
+            <Route path='/projectDetails/:id' element={<ProjectDashboard />} />
           </Routes>
         </AuthProvider>
       </DirectusProvider>

@@ -64,9 +64,9 @@ const Dashboard = () => {
               <img src={logo} alt='logo svg' />
             </li>
             <li>
-              <a class='sidebar_link' href='#'>
-                Projets
-              </a>
+              <Link class='sidebar_link' to='/dashboard'>
+                Projets en cours
+              </Link>
             </li>
             <li>
               <a class='sidebar_link' href='#'>
@@ -75,7 +75,7 @@ const Dashboard = () => {
             </li>
             <li>
               <Link class='sidebar_link' to='/logout'>
-                Logout
+                Déconnexion
               </Link>
             </li>
           </ul>
@@ -87,7 +87,7 @@ const Dashboard = () => {
           {projectsList.map((i, index) => (
             <>
               <article class='dashboard_card'>
-                <Link style={{ textDecoration: "none" }} to='/projectDetails'>
+                <Link style={{ textDecoration: "none" }} to={"/projectDetails/" + i.id}>
                   <div class='dashboard_card-green'>
                     <h3>{i.name}</h3>
                     <img src={arrow_right} alt='flèche image droite' />
