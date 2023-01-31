@@ -1,15 +1,16 @@
 import './App.css';
 import {AuthProvider} from "./hooks/auth";
 import {DirectusProvider} from "./hooks/directus";
+import ProjectList from "./components/ProjectList";
+import ProjectDashboard from "./pages/ProjectDashboard";
+import ProjectListPage from "./pages/ProjectListPage";
 
 function App() {
 
   return (
       <DirectusProvider>
           <AuthProvider>
-              <div>
-                  <h1>Data from Directus</h1>
-              </div>
+              <ProjectListPage/>
           </AuthProvider>
       </DirectusProvider>
   );

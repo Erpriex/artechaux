@@ -1,19 +1,16 @@
 import React from 'react';
+import ProjectForm from "./ProjectForm";
 
-const ProjectCreateForm = () => {
+const ProjectCreateForm = props => {
 
-    const handleSubmit = (evt) =>{
-        evt.preventDefault();
-        //add task in BDD
-
-    }
+    const {handleList} = props;
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={}/>
-                <input type="submit" value="Ajouter"/>
-            </form>
+            <button onClick={handleList}>Retour à la liste</button>
+            <ProjectForm
+                update={false}
+            />
         </div>
     );
 };
