@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Logout from "./components/authentification/Logout";
 import "./assets/stylesheets/style.css";
 import ProjectDashboard from "./pages/ProjectDashboard";
+import ProjectList from "./components/ProjectList";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='logout' element={<Logout />} />
             <Route path='dashboard' element={<Dashboard />} />
             <Route path='/projectDetails/:id' element={<ProjectDashboard />} />
+            <Route path='/projectList' element={<ProjectList />} />
           </Routes>
         </AuthProvider>
       </DirectusProvider>

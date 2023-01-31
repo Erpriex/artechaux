@@ -1281,6 +1281,13 @@ header .header-container_right::before {
   padding: 4px 20px;
 }
 
+.status-plan {
+  background-color: #858585;
+  color: #f2f2f2 !important;
+  border-radius: 50px;
+  padding: 4px 20px;
+}
+
 thead {
   border-bottom: 1px solid #000000;
 }

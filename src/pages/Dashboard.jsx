@@ -69,9 +69,9 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <a class='sidebar_link' href='#'>
-                Equipe
-              </a>
+              <Link class='sidebar_link' to='/projectList'>
+                Projets
+              </Link>
             </li>
             <li>
               <Link class='sidebar_link' to='/logout'>
