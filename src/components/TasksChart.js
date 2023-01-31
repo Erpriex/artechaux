@@ -4,9 +4,6 @@ import PropTypes from "prop-types";
 import {LineChart, Line, CartesianGrid, XAxis, YAxis, BarChart, Bar, Tooltip} from 'recharts';
 import TimeUtils from "../utils/TimeUtils";
 
-
-//const data = [{name: 'Item 1', Artisan: 4}, {name: 'Item 2', Artisan: 10}, {name: 'Item 3', Artisan: 12}, {name: 'Item 4', Artisan: 8}];
-
 const TasksChart = props => {
 
     const {
