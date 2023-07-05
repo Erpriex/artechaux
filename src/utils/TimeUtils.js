@@ -1,4 +1,4 @@
-module.exports = class TimeUtils{
+export default class TimeUtils{
 
     static incrementDate(date){
         let day = date.getDate();
